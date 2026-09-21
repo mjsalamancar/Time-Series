@@ -70,7 +70,7 @@
     "href": "210926-Clase.html",
     "title": "Clase-Profe",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "text": "Plan de trabajo: Metodología para la construcción de prónosticos\nNota:\n\nRevisar si tengo acceso al Drive\nVer Parcelador actualizado\nVer la Lista de Fallas",
     "crumbs": [
       "Clases",
       "Semana 4",
@@ -79,24 +79,11 @@
     ]
   },
   {
-    "objectID": "210926-Clase.html#quarto",
-    "href": "210926-Clase.html#quarto",
+    "objectID": "210926-Clase.html#series-de-tiempo-21-de-sept---semana-4",
+    "href": "210926-Clase.html#series-de-tiempo-21-de-sept---semana-4",
     "title": "Clase-Profe",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
-    "crumbs": [
-      "Clases",
-      "Semana 4",
-      "Lunes",
-      "Clase - Profe"
-    ]
-  },
-  {
-    "objectID": "210926-Clase.html#running-code",
-    "href": "210926-Clase.html#running-code",
-    "title": "Clase-Profe",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "text": "Plan de trabajo: Metodología para la construcción de prónosticos\nNota:\n\nRevisar si tengo acceso al Drive\nVer Parcelador actualizado\nVer la Lista de Fallas",
     "crumbs": [
       "Clases",
       "Semana 4",

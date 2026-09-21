@@ -14,52 +14,109 @@
     "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "210926.html#metodología-de-pronósticos-en-series-de-tiempo",
-    "href": "210926.html#metodología-de-pronósticos-en-series-de-tiempo",
+    "objectID": "210926-Clase.html",
+    "href": "210926-Clase.html",
+    "title": "Clase-Profe",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Clase - Profe "
+    ]
+  },
+  {
+    "objectID": "210926-Clase.html#quarto",
+    "href": "210926-Clase.html#quarto",
+    "title": "Clase-Profe",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Clase - Profe "
+    ]
+  },
+  {
+    "objectID": "210926-Clase.html#running-code",
+    "href": "210926-Clase.html#running-code",
+    "title": "Clase-Profe",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Clase - Profe "
+    ]
+  },
+  {
+    "objectID": "210926-Pre.html#metodología-de-pronósticos-en-series-de-tiempo",
+    "href": "210926-Pre.html#metodología-de-pronósticos-en-series-de-tiempo",
     "title": "Lunes",
     "section": "Metodología de Pronósticos en Series de Tiempo",
     "text": "Metodología de Pronósticos en Series de Tiempo",
     "crumbs": [
       "Clases",
       "Semana 4",
-      "Lunes"
+      "Pre- Clase"
     ]
   },
   {
-    "objectID": "210926.html#problema-práctico-de-los-pronósticos-i",
-    "href": "210926.html#problema-práctico-de-los-pronósticos-i",
+    "objectID": "210926-Pre.html#problema-práctico-de-los-pronósticos-i",
+    "href": "210926-Pre.html#problema-práctico-de-los-pronósticos-i",
     "title": "Lunes",
     "section": "Problema práctico de los Pronósticos (I)",
     "text": "Problema práctico de los Pronósticos (I)\n\nPara hablar de un método de prónostico, se debe adaptar lo anterior.\nPara ello es muy importante definir 3 elementos:\n\n\n\n\n\n\n\nNote1)\n\n\n\n1- Horizonte\n2- Pasos(s)\n3- Estrategia de Validación (Ventana, Muestreo, Calibración)\n\n\n\n\n\n\n\n\nNote2)\n\n\n\n1- Resultado de Interes\n2- Métricas de Evaluación de Pronósticos\n\n\n\n\n\n\n\n\nNote3)\n\n\n\n1- Estrategia de Selección de modelo",
     "crumbs": [
       "Clases",
       "Semana 4",
-      "Lunes"
+      "Pre- Clase"
     ]
   },
   {
-    "objectID": "210926.html#selección-del-horizonte-los-pasos-y-la-estrategia-de-validación",
-    "href": "210926.html#selección-del-horizonte-los-pasos-y-la-estrategia-de-validación",
+    "objectID": "210926-Pre.html#selección-del-horizonte-los-pasos-y-la-estrategia-de-validación",
+    "href": "210926-Pre.html#selección-del-horizonte-los-pasos-y-la-estrategia-de-validación",
     "title": "Lunes",
     "section": "Selección del horizonte, los pasos y la estrategia de validación",
     "text": "Selección del horizonte, los pasos y la estrategia de validación\nEjemplo:\n\nUn operador de un parque eólico participa en el mercado eléctrico mayorista. La producción real de energía del parque se observa hora a hora, sin rezago y esta información está disponible de forma continua.\nSin embargo, las reglas del mercado exigen que el operador declare hoy la oferta de energía para las próximas 24 horas, especificando la cantidad de energía que se compromete a inyectar en cada hora del día siguiente.",
     "crumbs": [
       "Clases",
       "Semana 4",
-      "Lunes"
+      "Pre- Clase"
     ]
   },
   {
-    "objectID": "210926.html#section-3",
-    "href": "210926.html#section-3",
+    "objectID": "210926-Pre.html#section-3",
+    "href": "210926-Pre.html#section-3",
     "title": "Lunes",
     "section": "",
     "text": "Luego hay que deglosar los 3 elementos clave para poder armar el modelo matemático.\n1- La Variable Objetivo (\\(Y_t\\))\n\\(Y_t\\) : “Producción de Energía Eolica cada hora”\n\\(Y_t\\) es el dato real que me interesa predecir en cada momento t\n\\(Y_t\\) es la cantidad exacta de energía inyectada en la red en la hora \\(t\\)\n2- La Frecuencia/ Periodo (1 hora)\nEs la predicción que estoy haciendo en bloques de 1 hora\n3- Horizonte de Predicción (H : 24horas)\nEsto es el pronóstico que debo hacer a un golpe completo, es que tan lejos en el futuro necesito lanzar mi pronóstico.\nEs la regla del mercado que vimos antes, no pronostico solo lo que va a pasar en la sguiente hora (t+1) sino que me paro hoy y debo calcular de una vez los valores de las proximas horas (\\(Y_{t+1}, Y_{t+2}, \\dots, Y_{t+24}\\)) para entregárselos al operador del mercado.\nRESUMEN RÁPIDO\nMi profesor me está diciendo, nuestra tarea es crear un modelo que parado en la hora actual, el modelo calcule 24 valores futuros (H=24) midiendo el resultado en MWh (\\(Y_t\\)) hora por hora (puesto que es una frecuencia de 1h)",
     "crumbs": [
       "Clases",
       "Semana 4",
-      "Lunes"
+      "Pre- Clase"
     ]
+  },
+  {
+    "objectID": "api-about1_files/210926-Pos.html",
+    "href": "api-about1_files/210926-Pos.html",
+    "title": "210926-Pos",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "api-about1_files/210926-Pos.html#quarto",
+    "href": "api-about1_files/210926-Pos.html#quarto",
+    "title": "210926-Pos",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "api-about1_files/210926-Pos.html#running-code",
+    "href": "api-about1_files/210926-Pos.html#running-code",
+    "title": "210926-Pos",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   },
   {
     "objectID": "index.html",

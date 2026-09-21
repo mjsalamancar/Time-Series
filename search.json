@@ -14,45 +14,6 @@
     "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "210926-Clase.html",
-    "href": "210926-Clase.html",
-    "title": "Clase-Profe",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
-    "crumbs": [
-      "Clases",
-      "Semana 4",
-      "Lunes",
-      "Clase - Profe"
-    ]
-  },
-  {
-    "objectID": "210926-Clase.html#quarto",
-    "href": "210926-Clase.html#quarto",
-    "title": "Clase-Profe",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
-    "crumbs": [
-      "Clases",
-      "Semana 4",
-      "Lunes",
-      "Clase - Profe"
-    ]
-  },
-  {
-    "objectID": "210926-Clase.html#running-code",
-    "href": "210926-Clase.html#running-code",
-    "title": "Clase-Profe",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
-    "crumbs": [
-      "Clases",
-      "Semana 4",
-      "Lunes",
-      "Clase - Profe"
-    ]
-  },
-  {
     "objectID": "210926-Pre.html#metodología-de-pronósticos-en-series-de-tiempo",
     "href": "210926-Pre.html#metodología-de-pronósticos-en-series-de-tiempo",
     "title": "Lunes",
@@ -105,39 +66,104 @@
     ]
   },
   {
-    "objectID": "api-about1_files/210926-Pos.html",
-    "href": "api-about1_files/210926-Pos.html",
-    "title": "210926-Pos",
+    "objectID": "210926-Clase.html",
+    "href": "210926-Clase.html",
+    "title": "Clase-Profe",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Lunes",
+      "Clase - Profe"
+    ]
   },
   {
-    "objectID": "api-about1_files/210926-Pos.html#quarto",
-    "href": "api-about1_files/210926-Pos.html#quarto",
-    "title": "210926-Pos",
+    "objectID": "210926-Clase.html#quarto",
+    "href": "210926-Clase.html#quarto",
+    "title": "Clase-Profe",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Lunes",
+      "Clase - Profe"
+    ]
   },
   {
-    "objectID": "api-about1_files/210926-Pos.html#running-code",
-    "href": "api-about1_files/210926-Pos.html#running-code",
+    "objectID": "210926-Clase.html#running-code",
+    "href": "210926-Clase.html#running-code",
+    "title": "Clase-Profe",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Lunes",
+      "Clase - Profe"
+    ]
+  },
+  {
+    "objectID": "210926-Pos.html",
+    "href": "210926-Pos.html",
+    "title": "210926-Pos",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Lunes",
+      "Pos-Clase"
+    ]
+  },
+  {
+    "objectID": "210926-Pos.html#quarto",
+    "href": "210926-Pos.html#quarto",
+    "title": "210926-Pos",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Lunes",
+      "Pos-Clase"
+    ]
+  },
+  {
+    "objectID": "210926-Pos.html#running-code",
+    "href": "210926-Pos.html#running-code",
     "title": "210926-Pos",
     "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed).",
+    "crumbs": [
+      "Clases",
+      "Semana 4",
+      "Lunes",
+      "Pos-Clase"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Taller 1",
     "section": "",
-    "text": "Sea \\((X,Y)^T\\) un vector aleario bidimensional con distribución normal bivariada.\nEs decir :\n\\[\\begin{pmatrix} X \\\\ Y \\end{pmatrix} \\sim NMV_2 \\left( \\boldsymbol{\\mu}_{X,Y} = \\begin{pmatrix} \\mu_X \\\\ \\mu_Y \\end{pmatrix}, \\Sigma_{XY} = \\begin{bmatrix} \\sigma_X^2 & \\rho \\sigma_X \\sigma_Y \\\\ \\rho \\sigma_X \\sigma_Y & \\sigma_Y^2 \\end{bmatrix} \\right).\\]\n\n\n\n\n\n\n\n\nLa función de densidad conjunta \\(f_{X,Y}(x,y)\\) mide la concentracion de probabilidad relativa de que la variable X tome un valor cercano a \\(x\\) al mismo tiempo quela variable \\(Y\\) toma un valor cercao a \\(y\\).\n\n\nLa altura de la superficie (Z) en un punto especifico (x,y) indica que tan probable es observar esa combinación particular de datos.\nEl volumen = Probabilidad total de que el par (X,Y) caiga en esa región\n\n\n\nPara demostrar que dos variables aleatorias continuas"
+    "text": "Sea \\((X,Y)^T\\) un vector aleario bidimensional con distribución normal bivariada.\nEs decir :\n\\[\\begin{pmatrix} X \\\\ Y \\end{pmatrix} \\sim NMV_2 \\left( \\boldsymbol{\\mu}_{X,Y} = \\begin{pmatrix} \\mu_X \\\\ \\mu_Y \\end{pmatrix}, \\Sigma_{XY} = \\begin{bmatrix} \\sigma_X^2 & \\rho \\sigma_X \\sigma_Y \\\\ \\rho \\sigma_X \\sigma_Y & \\sigma_Y^2 \\end{bmatrix} \\right).\\]\n\n\n\n\n\n\n\n\nLa función de densidad conjunta \\(f_{X,Y}(x,y)\\) mide la concentracion de probabilidad relativa de que la variable X tome un valor cercano a \\(x\\) al mismo tiempo quela variable \\(Y\\) toma un valor cercao a \\(y\\).\n\n\nLa altura de la superficie (Z) en un punto especifico (x,y) indica que tan probable es observar esa combinación particular de datos.\nEl volumen = Probabilidad total de que el par (X,Y) caiga en esa región\n\n\n\nPara demostrar que dos variables aleatorias continuas",
+    "crumbs": [
+      "Talleres",
+      "Taller 1"
+    ]
   },
   {
     "objectID": "index.html#a.-repaso-de-probabilidad-e-inferencia",
     "href": "index.html#a.-repaso-de-probabilidad-e-inferencia",
     "title": "Taller 1",
     "section": "",
-    "text": "Sea \\((X,Y)^T\\) un vector aleario bidimensional con distribución normal bivariada.\nEs decir :\n\\[\\begin{pmatrix} X \\\\ Y \\end{pmatrix} \\sim NMV_2 \\left( \\boldsymbol{\\mu}_{X,Y} = \\begin{pmatrix} \\mu_X \\\\ \\mu_Y \\end{pmatrix}, \\Sigma_{XY} = \\begin{bmatrix} \\sigma_X^2 & \\rho \\sigma_X \\sigma_Y \\\\ \\rho \\sigma_X \\sigma_Y & \\sigma_Y^2 \\end{bmatrix} \\right).\\]\n\n\n\n\n\n\n\n\nLa función de densidad conjunta \\(f_{X,Y}(x,y)\\) mide la concentracion de probabilidad relativa de que la variable X tome un valor cercano a \\(x\\) al mismo tiempo quela variable \\(Y\\) toma un valor cercao a \\(y\\).\n\n\nLa altura de la superficie (Z) en un punto especifico (x,y) indica que tan probable es observar esa combinación particular de datos.\nEl volumen = Probabilidad total de que el par (X,Y) caiga en esa región\n\n\n\nPara demostrar que dos variables aleatorias continuas"
+    "text": "Sea \\((X,Y)^T\\) un vector aleario bidimensional con distribución normal bivariada.\nEs decir :\n\\[\\begin{pmatrix} X \\\\ Y \\end{pmatrix} \\sim NMV_2 \\left( \\boldsymbol{\\mu}_{X,Y} = \\begin{pmatrix} \\mu_X \\\\ \\mu_Y \\end{pmatrix}, \\Sigma_{XY} = \\begin{bmatrix} \\sigma_X^2 & \\rho \\sigma_X \\sigma_Y \\\\ \\rho \\sigma_X \\sigma_Y & \\sigma_Y^2 \\end{bmatrix} \\right).\\]\n\n\n\n\n\n\n\n\nLa función de densidad conjunta \\(f_{X,Y}(x,y)\\) mide la concentracion de probabilidad relativa de que la variable X tome un valor cercano a \\(x\\) al mismo tiempo quela variable \\(Y\\) toma un valor cercao a \\(y\\).\n\n\nLa altura de la superficie (Z) en un punto especifico (x,y) indica que tan probable es observar esa combinación particular de datos.\nEl volumen = Probabilidad total de que el par (X,Y) caiga en esa región\n\n\n\nPara demostrar que dos variables aleatorias continuas",
+    "crumbs": [
+      "Talleres",
+      "Taller 1"
+    ]
   },
   {
     "objectID": "references.html",

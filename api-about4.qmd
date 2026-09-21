@@ -1,0 +1,135 @@
+---
+title: "Lunes"
+editor: visual
+---
+
+## Series de Tiempo
+
+## Metodología de Pronósticos en Series de Tiempo
+
+## Problema práctico de los Pronósticos (I)
+
+- Para hablar de un método de prónostico, se debe adaptar lo anterior.
+
+- Para ello es muy importante definir 3 elementos:
+
+::: {.callout-note icon="false" style="background-color: #f3e8ff; border-left-color: #9333ea;"}
+## 1)
+
+1- Horizonte
+
+2- Pasos(s)
+
+3- Estrategia de Validación (Ventana, Muestreo, Calibración)
+:::
+
+::: {.callout-note icon="false" style="background-color: #eff6ff; border-left-color: #2563eb;"}
+## 2)
+
+1- Resultado de Interes
+
+2- Métricas de Evaluación de Pronósticos
+:::
+
+::: {.callout-note icon="false" style="background-color: #fff7ed; border-left-color: #ea580c;"}
+## 3)
+
+1- Estrategia de Selección de modelo
+:::
+
+## Selección del horizonte, los pasos y la estrategia de validación
+
+Ejemplo:
+
+-  Un operador de un parque eólico participa en el mercado eléctrico mayorista. La producción real de energía del parque se observa **hora a hora,** sin rezago y esta información está disponible de forma continua.
+
+- Sin embargo, las reglas del mercado exigen que el operador **declare hoy la oferta de energía para las próximas 24 horas**, especificando la cantidad de energía que se compromete a inyectar en cada hora del día siguiente.
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(plotly)
+library(dplyr)
+
+# 1. Datos de simulación para las 24 horas
+set.seed(42)
+horas <- paste0(0:23, ":00")
+
+# Oferta Declarada ayer por el operador (fija)
+declarado <- c(30, 25, 20, 20, 25, 40, 60, 75, 80, 85, 90, 85, 80, 75, 70, 65, 70, 85, 90, 80, 60, 50, 40, 35)
+
+# Energía Inyectada Real hoy (varía por el viento)
+inyectado <- pmax(0, declarado + sample(-15:15, 24, replace = TRUE))
+
+df <- data.frame(horas = horas, declarado = declarado, inyectado = inyectado)
+
+# 2. Crear gráfico interactivo adaptado a los colores de tu CSS
+plot_ly(df, x = ~horas) %>%
+  # Línea de compromiso (Declarado) - Color Naranja Beamer
+  add_trace(
+    y = ~declarado, 
+    name = 'Oferta Declarada (Ayer)', 
+    type = 'scatter', 
+    mode = 'lines+markers',
+    line = list(color = '#d96b27', width = 3, dash = 'dash'),
+    marker = list(color = '#d96b27')
+  ) %>%
+  # Línea de producción real (Inyectado) - Color Azul Aguamarina CSS
+  add_trace(
+    y = ~inyectado, 
+    name = 'Energía Inyectada Real (Hoy)', 
+    type = 'scatter', 
+    mode = 'lines+markers',
+    fill = 'tonexty',
+    fillcolor = 'rgba(217, 107, 39, 0.15)',
+    line = list(color = '#1a4d59', width = 3),
+    marker = list(color = '#1a4d59')
+  ) %>%
+  # Configuración de diseño y fuentes
+  layout(
+    title = list(
+      text = "<b>Simulación 24h: Oferta Declarada vs. Energía Inyectada</b>",
+      font = list(family = "Plus Jakarta Sans", size = 18, color = "#2b2b2b")
+    ),
+    xaxis = list(title = "Hora del Día", gridcolor = "#e2dfd7"),
+    yaxis = list(title = "Potencia (MW)", gridcolor = "#e2dfd7"),
+    paper_bgcolor = 'rgba(0,0,0,0)',
+    plot_bgcolor = '#ffffff',
+    hovermode = "x unified",
+    legend = list(orientation = "h", y = 1.15, x = 0.2),
+    font = list(family = "Plus Jakarta Sans")
+  )
+```
+
+## 
+
+Luego hay que deglosar los 3 elementos clave para poder armar el modelo matemático.
+
+
+<mark style="background-color: yellow;">**1- La Variable Objetivo (**$Y_t$**)**</mark>
+
+$Y_t$ : "Producción de Energía Eolica cada hora"
+
+$Y_t$ es el dato real que me interesa predecir en cada momento t
+
+$Y_t$ es la cantidad exacta de energía inyectada en la red en la hora $t$
+
+<mark style="background-color: yellow;">**2- La Frecuencia/ Periodo (1 hora)**</mark>
+
+
+Es la predicción que estoy haciendo en bloques de 1 hora
+
+
+<mark style="background-color: yellow;">**3- Horizonte de Predicción (H : 24horas)**</mark>
+
+
+Esto es el pronóstico que debo hacer a un golpe completo, es que tan lejos en el futuro necesito lanzar mi pronóstico.
+
+Es la regla del mercado que vimos antes, no pronostico solo lo que va a pasar en la sguiente hora (t+1) sino que me paro hoy y debo calcular de una vez los valores de las proximas horas ($Y_{t+1}, Y_{t+2}, \dots, Y_{t+24}$) para entregárselos al operador del mercado.
+
+<mark style="background-color: orange;">**RESUMEN RÁPIDO**</mark>
+
+Mi profesor me está diciendo, nuestra tarea es crear un modelo que parado en la hora actual, el modelo calcule 24 valores futuros (H=24) midiendo el resultado en MWh ($Y_t$) hora por hora (puesto que es una frecuencia de 1h)
+
+

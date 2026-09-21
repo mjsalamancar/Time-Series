@@ -1,0 +1,55 @@
+project:
+  type: website
+
+website:
+  title: "FirelordJS Docs"
+  navbar:
+    logo: logo.png
+    background: "#18181b"
+    search: true
+    left:
+      - text: "FirelordJS"
+        href: index.qmd
+      - text: "Firestore"
+        href: firestore.qmd
+      - text: "Realtime Database"
+        href: rtdb.qmd
+    right:
+      - icon: github
+        href: https://github.com
+      - icon: discord
+        href: https://discord.com
+  sidebar:
+    style: "docked"
+    background: "#18181b"
+    contents:
+      - section: "Clases"
+        contents:
+          - text: "Semana 1"
+            href: api-about1.qmd
+          - text: "Semana 2"
+            href: api-about2.qmd
+          - text: "Semana 3"
+            href: api-about3.qmd
+          - text: "Semana 4"
+            href: api-about4.qmd
+          - text: "Semana 5"
+            href: api-about5.qmd
+          - text: "Semana 6"
+            href: api-about6.qmd
+      - section: "Talleres"
+        contents:
+          - text: "Taller 1"
+            href: api-about.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: vapor
+    css: custom.css
+    highlight-style: monokai
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+    toc-location: right
